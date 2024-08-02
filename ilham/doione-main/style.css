@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Petemoss&display=swap');
+
+*,
+*::before,
+*::after {
+  margin:0; padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none; border:none;
+  box-sizing: border-box;
+}
+
+/* ================ Navigation Menu ====================*/
+
+.navbar{
+    background: rgba(59, 116, 116, 0.58);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.1px);
+-webkit-backdrop-filter: blur(6.1px);
+/* Note: backdrop-filter has minimal browser support */
+}
+.navbar-light {
+    display: none;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    padding: 25px 10px;
+    color: white;
+    font-weight: 500;
+    outline: none;
+  }
+  .navbar-light .navbar-nav .nav-link i{
+      width: 40px;
+  }
+  
+  .navbar-light .navbar-nav .nav-link:hover,
+  .navbar-light .navbar-nav .nav-link.active {
+    color: #0BCEAF;
+  }
+  
+  @media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link {
+      padding: 10px 0;
+    }
+  }
+
+
+
+/* halaman 1 start  */
+.halaman1{
+    height: auto;
+    background-image: url(https://images.pexels.com/photos/5788421/pexels-photo-5788421.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+    background-repeat: no-repeat;
+    background-position: center;
+    mix-blend-mode: normal;
+    background-size: cover;
+}
+.halaman1 .container .judul_halaman1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(196, 196, 196, 0.77);
+    border: 1px solid rgba(59, 116, 116, 0.49);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    width: 40%;
+}
+.halaman1 .container .judul_halaman1 h1{
+    font-family: 'Beau Rivage', cursive;
+    font-weight: 900;
+}
+.halaman1 .container .subjudul_halaman1{
+    background-color: blueviolet;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    background: rgba(196, 196, 196, 0.77);
+    border: 1px solid rgba(59, 116, 116, 0.49);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-right: 10%;
+    padding-left: 10%;
+}
+.halaman1 .container .subjudul_halaman1 h2{
+    font-family: 'Beau Rivage', cursive;
+    font-weight: 900;
+    font-size: 500%;
+}
+@media screen and (max-width: 550px){
+    .halaman1{
+        height: auto;
+        padding-bottom: 40px;
+    }
+    .halaman1 .container .judul_halaman1 {
+        width: 100%;
+    }
+    .halaman1 .container .subjudul_halaman1{
+        margin-top: 400px;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    .halaman1 .container .judul_halaman1 h1{
+        font-size: 40px;
+    }
+    .halaman1 .container .subjudul_halaman1 h2{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 600px){
+    .halaman1 .container .judul_halaman1{
+        width: 50%;
+    }
+    .halaman1 .container .subjudul_halaman1 {
+        width: 80%;
+        margin-top: 20%;
+    }
+    .halaman1 .container .subjudul_halaman1 h2{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 768px){
+    .halaman1 .container .judul_halaman1{
+        width: 50%;
+    }
+    .halaman1 .container .subjudul_halaman1 {
+        width: 80%;
+        margin-top: 20%;
+    }
+    .halaman1 .container .subjudul_halaman1 h2{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 375px){
+    .halaman1 .container .judul_halaman1{
+        width: 50%;
+    }
+    .halaman1 .container .judul_halaman1 h1{
+        font-size: 30px;
+    }
+    .halaman1 .container .subjudul_halaman1 {
+        width: 80%;
+        margin-top: 20%;
+    }
+    .halaman1 .container .subjudul_halaman1 h2{
+        font-size: 30px;
+    }
+}
+/* halaman 1 end */
+
+
+
+/* halaman 2 start */
+.halaman2{
+    height: auto;
+    background-image: url(/img/background/background2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    mix-blend-mode: normal;
+    background-size: cover;
+}
+.halaman2 .container .ucapan h5{
+    color: black;
+}
+.halaman2 .container .pengantin1 h3{
+    margin-top: -30px;
+    font-family: 'Beau Rivage', cursive;
+    color: #3B7474;
+    font-weight: 900;
+}
+.halaman2 .container .pengantin2 h3{
+    margin-top: -30px;
+    font-family: 'Beau Rivage', cursive;
+    color: #3B7474;
+    font-weight: 900;
+}
+/* halaman 2 end */
+
+
+
+/* halaman 3 start */
+.halaman3{
+    height: auto;
+    padding-bottom: 50px;
+    background-image: url(/img/background/background3.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+}
+.halaman3 .container .icon3{
+    display: flex;
+    justify-content: center;
+    margin-left: 37%;
+}
+.halaman3 .container .card-group .card{
+    background: #EDF3F3;
+}
+.halaman3 .container .card-group{
+    padding-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-radius: 40px;
+}
+.halaman3 .container .card-group .card .card-body h1{
+    font-family: 'Beau Rivage', cursive;
+    color: #3B7474;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.45);
+}
+/* halaman 3 end */
+
+
+
+/* halaman 4 start */
+.halaman4{
+    height: auto;
+    background-image: url(/img/background/background4.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    mix-blend-mode: normal;
+    background-size: auto;
+}
+.halaman4 .container .halaman-4-judul h1{
+    
+    font-family: 'Petemoss';
+    font-size: 70px;
+    font-weight: 200;
+    color: #3B7474;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.45);
+}
+.halaman4 .container .button-1 .btn{
+    background-color: #3B7474;
+    margin-top: 3%;
+    list-style: none;
+}
+@media screen and (max-width: 550px){
+    .halaman4 .container .halaman-4-judul h1{
+        font-size: 50px;
+    }
+}
+/* halaman 4 end */
+
+
+
+/* halaman 5 start */
+.halaman5{
+    height: auto;
+    background-image: url(/img/background/background5.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.halaman5 h1{
+    font-family: 'Petemoss';
+    font-size: 70px;
+    font-weight: 200;
+    color: #3B7474;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.45);
+}
+/* halaman 5 end */
+
+
+
+/* halaman 6 start */
+.halaman6{
+    height: auto;
+    background-image: url(/img/background/background68.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    mix-blend-mode: normal;
+    background-size: cover;
+}
+.halaman6 h1{
+    font-family: 'Petemoss', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 141px;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+
+color: #FFFFFF;
+
+text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.45);
+}
+@media screen and (max-width: 550px){
+    .halaman6 .container .d-flex .embed-video h1{
+        width: auto;
+        font-size: 50px;
+        margin-bottom: -30px;
+    }
+    .halaman6 .container .d-flex .embed-video iframe{
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 600px){
+   .halaman6 .container .d-flex .embed-video iframe{
+       width: 90%;
+   } 
+}
+@media screen and (max-width: 768px){
+    .halaman6 .container .d-flex .embed-video iframe{
+    width: 90%;
+    } 
+}
+/* halaman 6 end */
+
+
+
+/* halaman 8 start */
+.halaman8{
+    height: auto;
+}
+.halaman8 .container .box-ayat{
+    width: 75%;
+    color: white;
+    --corner-radius: 0.75em;
+  --border-width: 2px;
+  --border-color: rgba(255,255,255,0.4);
+  --border-padding: 0.25em;
+}
+.halaman8 .container .box-ayat .p-2{
+    /* customize to your heart's content */
+  --corner-radius: 0.75em;
+  --border-width: 2px;
+  --border-color: rgba(255,255,255,0.4);
+  --border-padding: 0.25em;
+
+  background: rgba(8, 84, 84, 0.44);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.4px);
+-webkit-backdrop-filter: blur(7.4px);
+border: 1px solid rgba(8, 84, 84, 0.02);
+} 
+.halaman8 .container .box-ayat .p-2{
+    --cr: var(--corner-radius);
+  --bp: var(--border-padding);
+  --bw: var(--border-width);
+  --bc: var(--border-color);
+  --co: calc(var(--cr) + var(--bw));
+  --bo: calc(var(--cr) * 2);
+  --gr: #0000 calc(98% - var(--bw)),#000 calc(100% - var(--bw)) 98%,#0000;
+  --mask-inside: 
+    radial-gradient(farthest-side at 0    0   ,var(--gr)) 0    0   /var(--co) var(--co) no-repeat,
+    radial-gradient(farthest-side at 100% 0   ,var(--gr)) 100% 0   /var(--co) var(--co) no-repeat,
+    radial-gradient(farthest-side at 0    100%,var(--gr)) 0    100%/var(--co) var(--co) no-repeat,
+    radial-gradient(farthest-side at 100% 100%,var(--gr)) 100% 100%/var(--co) var(--co) no-repeat,
+    linear-gradient(90deg,#000 var(--bw),#0000 0 calc(100% - var(--bw)),#000 0) 50%/100% calc(100% - var(--bo)) no-repeat,
+    linear-gradient(      #000 var(--bw),#0000 0 calc(100% - var(--bw)),#000 0) 50%/calc(100% - var(--bo)) 100% no-repeat;
+  --mask-outside:
+    radial-gradient(var(--cr) at 0    0   ,#0000 98%,#000) 0    0   /51% 51%  no-repeat,
+    radial-gradient(var(--cr) at 100% 0   ,#0000 98%,#000) 100% 0   /51% 51%  no-repeat,
+    radial-gradient(var(--cr) at 100% 100%,#0000 98%,#000) 100% 100%/51% 51%  no-repeat,
+    radial-gradient(var(--cr) at 0    100%,#0000 98%,#000) 0    100%/51% 51%  no-repeat;	
+
+  position: relative;
+  -webkit-mask: var(--mask-outside);
+          mask: var(--mask-outside);
+}
+.halaman8 .container .box-ayat .p-2::before{
+    content: "";
+	position: absolute;
+	pointer-events: none;
+	inset: var(--bp);
+	background: var(--bc);
+	-webkit-mask: var(--mask-inside);
+	        mask: var(--mask-inside);
+}
+@media screen and (max-width: 550px){
+    .halaman7 .container .p-2{
+        color: #BE3058;
+    }
+}
+@media screen and (max-width: 375px){
+    .halaman8 .container .box-ayat .p-2{
+        width: 100%;
+    }
+    .halaman8 .container .box-ayat .p-2 p{
+        font-size: 15px;
+    }
+}
+/* halaman 8 end */
+
+
+
+/* halaman 10 start */
+.halaman10{
+    height: auto;
+    background-image: url(/img/background/background10.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    mix-blend-mode: normal;
+    background-size: cover;
+}
+.halaman10 .halaman9 .container .form{
+    background: rgba(8, 84, 84, 0.48);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.4px);
+    -webkit-backdrop-filter: blur(7.4px);
+    border: 1px solid rgba(8, 84, 84, 0.02);
+}
+.halaman10 .halaman9 h1{
+    font-family: 'Petemoss';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 141px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    color: #fff;
+
+text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.45);
+}
+.halaman10 .judul10 h1 {
+    font-family: 'Petemoss';
+font-style: normal;
+font-weight: 400;
+font-size: 100px;
+line-height: 141px;
+text-align: center;
+letter-spacing: -0.02em;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.45);
+}
+.halaman10 .container .comment{
+    border: 1px solid #52a7a7;
+    border-radius: 20px;
+    color: white;
+}
+.halaman10 .container .comment .p-2{
+    border-bottom: 1px solid #52a7a7;
+}
+
+.halaman10 .container .penutup h1{
+    font-family: 'Petemoss', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 161px;
+    color: white;
+}
+.halaman10 .container .penutup .penutup_undangan{
+    margin-bottom: 4%;
+}
+.halaman10 .container .penutup .penutup_undangan p{
+    font-size: 20px;
+    color: white;
+}
+.halaman10 .container .penutup .design-by h4{
+    color: #fff;
+}
+
+@media screen and (max-width: 550px){
+    .halaman10 .halaman9 h1{
+        font-size: 70px;
+    }
+    .halaman10 .container .penutup h1{
+        font-size: 50px;
+    }
+    .halaman10 .judul10 h1{
+        font-size: 70px;
+    }
+}
+/* halaman 10 end */

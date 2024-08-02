@@ -1,0 +1,66 @@
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login .col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login .col img {
+  width: 100%;
+}
+.login .col form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.login .col form input {
+  width: 400px;
+  padding: 10px;
+  margin: 10px 0px;
+  border-radius: 20px;
+  border: 4px double #566fd7;
+  background-color: #fff;
+}
+.login .col form button {
+  background-color: #566fd7;
+  color: #fff;
+  padding: 10px;
+  width: 200px;
+  border-radius: 20px;
+  border: 0px;
+  transition: 0.2s all;
+  margin: 20px 0px;
+}
+.login .col form button:hover {
+  cursor: pointer;
+  transform: translateY(5px);
+}
+.login .col .forgot:hover {
+  opacity: 0.5;
+}
+.login .col .forgot {
+  color: #566fd7;
+}
+
+/* Responsive Breakpiont */
+
+/* ukuran tablet */
+@media screen and (max-width: 768px) {
+  nav ul {
+    width: 50%;
+  }
+}
+/* ukuran mobile */
+@media screen and (max-width: 576px) {
+  .login {
+    flex-direction: column;
+  }
+  .login .col {
+    width: 100%;
+  }
+}

@@ -1,0 +1,442 @@
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+.banner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0px;
+}
+.banner .col.hero_banner {
+  display: flex;
+  align-items: end;
+}
+.banner .col img {
+  width: 80%;
+}
+
+/* about */
+.about {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* fitur */
+.fitur {
+  background-color: #566fd7;
+  background-image: url(/assets/img/background.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.fitur .boxContainer {
+  width: 100%;
+  display: grid;
+  margin: 40px 0px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  align-content: center;
+  gap: 40px;
+}
+.fitur .boxContainer .box {
+  width: 300px;
+  height: 270px;
+  background: #ffffff;
+  box-shadow: 0px 1px 15px 4px rgba(0, 0, 0, 0.17);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.fitur .boxContainer .box img {
+  width: 80px;
+}
+
+/* tema */
+.tema {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.tema .boxContainer {
+  width: 100%;
+  display: grid;
+  margin: 40px 0px;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  justify-items: center;
+  align-content: center;
+  gap: 50px;
+}
+.tema .boxContainer .box {
+  border-radius: 20px;
+  width: 270px;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: 0.5s all;
+  z-index: 2;
+}
+.tema .boxContainer .box:hover {
+  transform: scale(1.1);
+}
+.tema .boxContainer .box .back {
+  filter: blur(2px);
+  position: absolute;
+  transform: scale(1.1);
+  z-index: 3;
+  border-radius: 20px;
+}
+.tema .boxContainer .box .front {
+  z-index: 4;
+  border-radius: 20px;
+}
+.tema .boxContainer .box .title {
+  position: absolute;
+  background-color: #ffffff;
+  bottom: 0;
+  left: -5px;
+  padding: 15px 45px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 25px;
+  border-radius: 0px 20px;
+  background-color: #566fd7;
+  color: #ffffff;
+  z-index: 5;
+}
+
+/* paket */
+.paket {
+  width: 100%;
+  background-image: url(/assets/img/background.png);
+  background-position: center;
+  background-size: cover;
+  background-color: #566fd7;
+}
+.paket .boxContainer {
+  width: 100%;
+  display: grid;
+  margin: 40px 0px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+  align-content: center;
+  gap: 50px;
+}
+.paket .boxContainer .box {
+  background-color: #fff;
+  width: 250px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.paket .boxContainer .box ul {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+.paket .boxContainer .box li {
+  font-size: 15px;
+  font-weight: bold;
+}
+.paket .boxContainer .box .variasi .diskon_harga {
+  display: flex;
+  justify-content: space-between;
+}
+.paket .boxContainer .box .variasi .diskon_harga .diskon {
+  transform: scale(1.1);
+}
+.paket .boxContainer .box .variasi .harga_asli {
+  text-decoration: line-through;
+  color: red;
+}
+.paket .boxContainer .box .variasi .harga {
+  text-align: center;
+  background-color: #73a2ff;
+  padding: 10px;
+  font-size: 20px;
+}
+.paket .boxContainer .box .variasi {
+  margin: 0px 20px;
+  position: absolute;
+  bottom: 20px;
+}
+.paket .boxContainer .box .variasi img {
+  width: 100%;
+}
+.paket .boxContainer .box .heading1 {
+  margin-top: 40px;
+  background-color: #73a2ff;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+/* testi */
+.testi {
+  background-image: url(/assets/img/background2.png);
+  background-size: cover;
+  background-position: center;
+}
+.testi .boxContainer {
+  width: 100%;
+  display: grid;
+  margin: 40px 0px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-items: center;
+  align-content: center;
+  gap: 50px;
+}
+.testi .boxContainer .box {
+  background: linear-gradient(180deg, #227aff 0%, rgba(34, 249, 204, 0.41) 99.99%, rgba(34, 255, 202, 0) 100%);
+  box-shadow: 0px 1px 15px 4px rgba(0, 0, 0, 0.17);
+  border-radius: 10px;
+  width: 400px;
+  padding: 20px;
+}
+.testi .boxContainer .box img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 10px 0px;
+}
+.testi .boxContainer .box .boxIdentity {
+  display: flex;
+  justify-content: space-between;
+}
+.testi .boxContainer .box .boxPesan {
+  background: #c4c4c4;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+}
+
+/* htu */
+.htu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.htu .boxContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px;
+}
+.htu .boxContainer .box {
+  display: flex;
+  margin: 40px 0px;
+}
+.htu .boxContainer .box.balik {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.htu .boxContainer .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+/* contact */
+.contact {
+  background-color: #112c97;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(248, 248, 248);
+}
+.contact .col .subheading3 {
+  text-align: left;
+  width: 400px;
+}
+.contact .col form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact .col img {
+  width: 60%;
+}
+.contact .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.col.contactForm .subheading3 {
+  text-align: center;
+  width: 500px;
+  margin-bottom: 20px;
+}
+.contactForm .heading2 {
+  width: 60%;
+  text-align: center;
+}
+.contactForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.contactForm form input {
+  width: 400px;
+  padding: 10px 20px;
+  margin: 10px 0px;
+  border-radius: 20px;
+  border: 0px;
+}
+.contactForm form textarea {
+  width: 400px;
+  border-radius: 20px;
+  padding: 20px;
+}
+.contactForm form button {
+  width: 400px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 0px;
+  background-color: #73a2ff;
+  font-size: 20px;
+  font-family: "Bebas Neue", cursive;
+  margin: 10px 0px;
+  color: #fff;
+}
+.contactForm form button:hover {
+  cursor: pointer;
+}
+
+footer .logo {
+  width: max-content;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0c268f;
+}
+footer .sosmedContainer {
+  display: flex;
+  align-items: center;
+}
+footer .sosmedContainer .sosmed {
+  margin-left: 10px;
+  transition: 0.5s all;
+}
+footer .sosmedContainer .sosmed:hover {
+  transform: translateY(5px);
+}
+
+.cp {
+  display: flex;
+  justify-content: center;
+  background-color: #0c268f;
+  color: #fff;
+  padding: 10px;
+}
+.cp a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 5px;
+}
+
+.maintance {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.maintance .heading1 {
+  color: #566fd7;
+}
+.maintance img{
+  width: 20%;
+}
+
+/* Responsive Breakpiont */
+
+/* ukuran tablet */
+@media screen and (max-width: 768px) {
+  nav ul {
+    width: 50%;
+  }
+}
+/* ukuran mobile */
+@media screen and (max-width: 576px) {
+  .maintance {
+    padding: 50px;
+  }
+  .maintance img{
+    width: 100%;
+  }
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner .col {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner .col.hero_banner {
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .banner .heading1 {
+    text-align: center;
+  }
+  .banner .subheading {
+    text-align: center;
+  }
+  .fitur {
+    background-size: contain;
+  }
+  .fitur .subheading2 {
+    text-align: center;
+  }
+  .htu .boxContainer .box {
+    flex-direction: column;
+  }
+  .htu .boxContainer .box.balik {
+    flex-direction: column;
+  }
+  .htu .boxContainer .text {
+    align-items: center;
+  }
+  .contact {
+    flex-direction: column;
+  }
+  .col.contactForm .subheading3 {
+    width: 400px;
+  }
+  .contactForm .heading2 {
+    width: 100%;
+  }
+  .contact .col {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact .col .heading2 {
+    text-align: center;
+  }
+  footer .sosmedContainer .sosmed img {
+    width: 40px;
+  }
+  footer .logo img {
+    width: 100px;
+  }
+}

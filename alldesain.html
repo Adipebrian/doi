@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | DOI</title>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/home.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="layout">
+      <!-- Navbar -->
+      <nav>
+        <a href="#" class="logo">
+          <img src="assets/img/logo.png" alt="" />
+        </a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Template</a></li>
+          <li><a href="#">Paket</a></li>
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a class="btn_login" href="#">Login</a></li>
+        </ul>
+        <div class="menu-toggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+      <!-- banner -->
+
+      <!-- All Desain -->
+      <!-- tema -->
+      <section class="layout tema">
+        <div class="heading2">PILIHAN TEMA UNDANGAN</div>
+        <div class="boxContainer">
+          <a href="#" class="box">
+            <img src="assets/img/contoh.png" alt="" class="back" />
+            <img src="assets/img/contoh.png" alt="" class="front" />
+            <div class="title">TEMA</div>
+          </a>
+          <a href="#" class="box">
+            <img src="assets/img/contoh.png" alt="" class="back" />
+            <img src="assets/img/contoh.png" alt="" class="front" />
+            <div class="title">TEMA</div>
+          </a>
+          <a href="#" class="box">
+            <img src="assets/img/contoh.png" alt="" class="back" />
+            <img src="assets/img/contoh.png" alt="" class="front" />
+            <div class="title">TEMA</div>
+          </a>
+          <a href="#" class="box">
+            <img src="assets/img/contoh.png" alt="" class="back" />
+            <img src="assets/img/contoh.png" alt="" class="front" />
+            <div class="title">TEMA</div>
+          </a>
+          <a href="#" class="box">
+            <img src="assets/img/contoh.png" alt="" class="back" />
+            <img src="assets/img/contoh.png" alt="" class="front" />
+            <div class="title">TEMA</div>
+          </a>
+          <a href="#" class="box">
+            <img src="assets/img/contoh.png" alt="" class="back" />
+            <img src="assets/img/contoh.png" alt="" class="front" />
+            <div class="title">TEMA</div>
+          </a>
+        </div>
+      </section>
+    </header>
+    <!-- contact -->
+    <section class="layout contact">
+      <div class="col">
+        <div class="heading2">Tentang Kami</div>
+        <div class="logo">
+          <img src="assets/img/logo.png" alt="" />
+          <div class="subheading3">DOI.COM adalah sebuah website pembuatan undangan online instan. Misi kami adalah membantu jutaan orang dalam merencanakan berbagai acara spesial mereka. Kepuasan pelanggan adalah prioritas kami.</div>
+        </div>
+      </div>
+      <div class="col contactForm">
+        <div class="heading2">Kontak Kami</div>
+        <div class="subheading3">Jika ada hal yang ingin sampaikan atau ada pertanyaan, silahkan sampaikan melalui form berikut</div>
+        <form action="" method="post">
+          <label for="nama">Nama</label>
+          <input type="text" placeholder="Nama" name="nama" />
+          <label for="email">Email</label>
+          <input type="email" placeholder="Nama" name="email" />
+          <label for="pesan">Pesan</label>
+          <textarea name="pesan" id="pesan" cols="30" rows="10" placeholder="Pesan"></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="layout">
+      <div class="col">
+        <a href="#" class="logo">
+          <img src="assets/img/logo.png" alt="" />
+        </a>
+      </div>
+      <div class="sosmedContainer">
+        <a href="#" class="sosmed"><img src="assets/img/ig.png" alt="" /></a>
+        <a href="#" class="sosmed"><img src="assets/img/fb.png" alt="" /></a>
+        <a href="#" class="sosmed"><img src="assets/img/google.png" alt="" /></a>
+        <a href="#" class="sosmed"><img src="assets/img/wa.png" alt="" /></a>
+      </div>
+    </footer>
+
+    <div class="cp">Copyright By <a href="https://doiaja.com"> DOI(Digital Online Invitation)</a></div>
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+      });
+    </script>
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle input");
+      const nav = document.querySelector("nav ul");
+
+      menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("slide");
+      });
+    </script>
+  </body>
+</html>
