@@ -842,6 +842,9 @@ background-color: #fff;
   html {
     overflow-x: hidden;
   }
+  body{
+    overflow-x: hidden;
+  }
   nav {
     left: 0;
     right: 0;
