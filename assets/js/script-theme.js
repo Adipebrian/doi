@@ -109,25 +109,7 @@ closeCover.addEventListener("click", () => {
 });
 
 
-// modal
 
-const openModalBtn = document.querySelectorAll(".open");
-const closeModal = document.querySelector(".close-modal");
-const modal = document.querySelector(".modal");
-const modalContainer = document.querySelector(".modal-container");
-
-openModalBtn.forEach((openModal) => {
-  openModal.addEventListener("click", () => {
-    modal.classList.remove("hide");
-    modalContainer.classList.remove("hide");
-  });
-});
-closeModal.addEventListener("click", () => {
-  setTimeout(() => {
-    modal.classList.add("hide");
-  }, 800);
-  modalContainer.classList.add("hide");
-});
 
 const slide1 = document.querySelector("#slide1");
 const slide2 = document.querySelector("#slide2");
@@ -188,3 +170,22 @@ ketiga.addEventListener("click", function () {
 // const acara = document.querySelector("#acara");
 // const galery = document.querySelector("#galery");
 // const ucapan = document.querySelector("#ucapan");
+// modal
+
+const openModalBtn = document.querySelectorAll(".open");
+const closeModal = document.querySelector(".close-modal");
+const modal = document.querySelector(".modal");
+const modalContainer = document.querySelector(".modal-container");
+
+openModalBtn.forEach((openModal) => {
+  openModal.addEventListener("click", () => {
+    modal.classList.remove("hide");
+    modalContainer.classList.remove("hide");
+  });
+});
+closeModal.addEventListener("click", () => {
+  setTimeout(() => {
+    modal.classList.add("hide");
+  }, 800);
+  modalContainer.classList.add("hide");
+});
