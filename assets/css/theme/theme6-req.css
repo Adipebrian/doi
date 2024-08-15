@@ -660,8 +660,51 @@ header .wrapper .head {
   background-size: cover;
   margin-right: 5px;
 }
+.icon_ig {
+  width: 35px;
+  height: 35px;
+  background-image: url(../../../assets/img/theme/theme6/ig.png);
+  background-size: cover;
+  margin-right: 5px;
+}
+.icon_web {
+  width: 35px;
+  height: 35px;
+  background-image: url(../../../assets/img/theme/theme6/web.png);
+  background-size: cover;
+  margin-right: 5px;
+}
 .btn_send:hover {
   cursor: pointer;
+}
+
+.tamu .info{
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tamu .info .ig{
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+}
+.tamu span{
+  font-size: 30px;
+}
+.tamu .info a{
+  text-decoration: none;
+  color: #000;
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+}
+.tamu .info a:hover{
+  text-decoration: underline;
+}
+.tamu .info .web{
+  display: flex;
+  gap: 20px;
+
 }
 
 
